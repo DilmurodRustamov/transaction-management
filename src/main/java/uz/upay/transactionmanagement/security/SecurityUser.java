@@ -22,7 +22,7 @@ public class SecurityUser implements UserDetails {
         this.userId = user.getId();
         this.userRole = user.getUserRole();
         this.phoneNumber = user.getPhoneNumber();
-        this.password = userRole.equals(UserRole.USER) ? "password" : user.getPassword();
+        this.password = user.getPassword();
     }
 
     @Override
